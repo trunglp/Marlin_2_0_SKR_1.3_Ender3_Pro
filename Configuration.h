@@ -519,7 +519,8 @@
  * heater. If your configuration is significantly different than this and you don't understand
  * the issues involved, don't use bed PID until someone else verifies that your hardware works.
  */
-//#define PIDTEMPBED
+//lptrung on
+#define PIDTEMPBED
 
 //#define BED_LIMIT_SWITCHING
 
@@ -739,7 +740,7 @@
 // cho nay anh huong nhieu den TMC2208, set toc do va su im lang
 //default #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 93 }
 //https://www.youtube.com/watch?v=sSO3Xd0a0Z8 cho nay set cho con tmc2208v3 la 8000
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 98.3 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 82.10, 80.50, 400, 98.3 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -942,10 +943,10 @@
  */
 
 //lptrung
-#define X_PROBE_OFFSET_FROM_EXTRUDER -56  // X offset: -left  +right  [of the nozzle]
+#define X_PROBE_OFFSET_FROM_EXTRUDER -54  // X offset: -left  +right  [of the nozzle]
 #define Y_PROBE_OFFSET_FROM_EXTRUDER -17  // Y offset: -front +behind [the nozzle]
 //lptrung khi tim dc z-offet co the gan truc tiep cho nay
-#define Z_PROBE_OFFSET_FROM_EXTRUDER -3.5   // Z offset: -below +above  [the nozzle]
+#define Z_PROBE_OFFSET_FROM_EXTRUDER -3.35  // Z offset: -below +above  [the nozzle]
 
 // Certain types of probes need to stay away from edges
 #define MIN_PROBE_EDGE 10
@@ -1041,7 +1042,8 @@
 // @section extruder
 
 #define DISABLE_E false             // For all extruders
-//#define DISABLE_INACTIVE_EXTRUDER // Keep only the active extruder enabled
+//lptrung on
+#define DISABLE_INACTIVE_EXTRUDER // Keep only the active extruder enabled
 
 // @section machine
 
