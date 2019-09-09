@@ -519,8 +519,8 @@
  * heater. If your configuration is significantly different than this and you don't understand
  * the issues involved, don't use bed PID until someone else verifies that your hardware works.
  */
-//lptrung on
-#define PIDTEMPBED
+//lptrung tat cho nay khong thoi no khong tang nhiet do bed
+//#define PIDTEMPBED
 
 //#define BED_LIMIT_SWITCHING
 
@@ -740,7 +740,7 @@
 // cho nay anh huong nhieu den TMC2208, set toc do va su im lang
 //default #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 93 }
 //https://www.youtube.com/watch?v=sSO3Xd0a0Z8 cho nay set cho con tmc2208v3 la 8000
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 82.10, 80.50, 400, 98.3 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80.80, 80.50, 400, 98.3 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -885,7 +885,7 @@
 //lptrung
 #define BLTOUCH
 #define SERVO0_PIN P2_00 //P2_00
-//#define BLTOUCH_DELAY 375   // (ms) Enable and increase if needed
+#define BLTOUCH_DELAY 375   // (ms) Enable and increase if needed
 
 /**
  * Touch-MI Probe by hotends.fr
@@ -943,10 +943,10 @@
  */
 
 //lptrung
-#define X_PROBE_OFFSET_FROM_EXTRUDER -54  // X offset: -left  +right  [of the nozzle]
+#define X_PROBE_OFFSET_FROM_EXTRUDER -55  // X offset: -left  +right  [of the nozzle]
 #define Y_PROBE_OFFSET_FROM_EXTRUDER -17  // Y offset: -front +behind [the nozzle]
 //lptrung khi tim dc z-offet co the gan truc tiep cho nay
-#define Z_PROBE_OFFSET_FROM_EXTRUDER -3.35  // Z offset: -below +above  [the nozzle]
+#define Z_PROBE_OFFSET_FROM_EXTRUDER -3.0  // Z offset: -below +above  [the nozzle]
 
 // Certain types of probes need to stay away from edges
 #define MIN_PROBE_EDGE 10
@@ -1084,8 +1084,8 @@
 
 // The size of the print bed
 //lptrung nghien cuu cho nay
-#define X_BED_SIZE 235
-#define Y_BED_SIZE 235
+#define X_BED_SIZE 228  //235 giam de khong dung vao extrutor
+#define Y_BED_SIZE 235 //235
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 //lptrung nghien cuu cho nay
