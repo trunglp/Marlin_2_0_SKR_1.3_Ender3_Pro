@@ -60,5 +60,99 @@ Nghiên cứu
 
 ##Ender 3 Pro sử dụng 24V
 #define CHOPPER_TIMING CHOPPER_DEFAULT_24V
-  
+
+
+Firmware is set for low noise prints with highest possible quality.
+
+     
+    COM BOUDRATE 1000000
+     
+    Extruder 1
+     
+    DEFAULT_NOMINAL_FILAMENT_DIA 1.75
+     
+    TEMSENSORS SET AS ORIGINAL
+     
+    PID CALIBRATED TO ORIGINAL HEAD
+    DEFAULT_Kp 17.20
+    DEFAULT_Ki 1.06
+    DEFAULT_Kd 69.58
+     
+    Prevent Cold Extrusion 190 C
+     
+    Thermal Protection: Hotends, Bed,
+     
+    Drivers TMC2208 UART MODE
+     
+    Steps sets for quality,
+     
+    BLTouch if used added delay for lower errors,
+     
+    Probe (BLTouch) position offset set to Minimalistic fan mount - REDESIGN v 4.0
+     
+    Z SAFE HOMING - 5 mm
+     
+    BED SIZE = 235 X,Y Z = 250
+     
+    MESH BED LEVELING - MANUAL OR AUTOMATIC BLTouch,
+     
+    DEBUG LEVELING ENABLED,
+     
+    G26 MESH VALIDATION ENABLED,
+     
+    LCD BED LEVELING ENABLED,
+     
+    SAFE MANUAL BED LEVELING CORNERS SETS 35 mm FROM EDGE,
+     
+    EEPROM SETTINGS - M500 ENABLED,
+     
+    EEPROM CHITCHAT ENABLED,
+     
+    PREHEAT SET FOR PLA - 215C/50C & PET-G 240C/70C
+     
+    NOZZLE PARK FEATURE SET,
+     
+    NOZZLE CLEAN FEATURE G12 ENABLED,
+     
+    PRINT JOBS STATISTICS ENABLED,
+     
+    LANGUAGE - EN
+     
+    SDSUPPORT ENABLED,
+     
+    INDIVIDUAL AXIS HOMING MENU ENABLED,
+     
+    CR10 STOCK DISPLAY ENABLED - Stock display for Ender,
+     
+    ADAPTIVE STEP SMOOTHING,
+     
+    MICROSTEPS 16
+     
+    STATUS FAN FRAMES 4,
+     
+    BABYSTEPPING,
+     
+    LIN_ADVANCE_K 0.0,
+     
+    ARC_SUPPORT ,
+     
+    SERIAL OVERRUN PROTECTION,
+     
+    ADVANCED_PAUSE_FEATURE - ENABLED,
+     
+    FILAMENT CHANGE LCD - ENABLED,
+     
+    TMC2208 CURRENT X,Y,Z - 800, E0 900,
+     
+    STEALTHCHOP X,Y,Z,E
+     
+    CHOPPER_TIMING CHOPPER_DEFAULT_24V,
+     
+    MONITOR_DRIVER_STATUS - M122, M911, M912, M906,
+     
+    HYBRID_THRESHOLD - DISABLED FOR QUIETLY PRINTS,
+     
+    TMC DEBUG - ENABLED.
+    
+    
   
