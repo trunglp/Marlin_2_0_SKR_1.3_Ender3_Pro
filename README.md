@@ -2,6 +2,7 @@
 
 ![SKR1 3](https://user-images.githubusercontent.com/38026441/64603378-847b6c80-d3ea-11e9-9a2b-126b74639f10.jpg)
 
+![2019-08-20_16-13-17](https://user-images.githubusercontent.com/38026441/65943606-0a269100-e45a-11e9-938f-d2062ed524a4.png)
 
 # Marlin_2_0_SKR_1.3_Ender3_Pro
 Marlin 2.0 for SKR V1.3 Ender 3 Pro
